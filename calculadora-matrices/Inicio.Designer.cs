@@ -28,21 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnConfirTam = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtFilas = new System.Windows.Forms.TextBox();
+            this.txtFilasA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtColum = new System.Windows.Forms.TextBox();
+            this.txtColumA = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.gb = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvMA = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvMB = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvMR = new System.Windows.Forms.DataGridView();
             this.btnSum = new System.Windows.Forms.Button();
             this.btnRes = new System.Windows.Forms.Button();
@@ -52,11 +55,15 @@
             this.lblOper = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtColumB = new System.Windows.Forms.TextBox();
+            this.txtFilasB = new System.Windows.Forms.TextBox();
             this.gb.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMA)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMB)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMR)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +75,7 @@
             this.btnConfirTam.TabIndex = 0;
             this.btnConfirTam.Text = "Confirmar Tamaño";
             this.btnConfirTam.UseVisualStyleBackColor = true;
+            this.btnConfirTam.Click += new System.EventHandler(this.btnConfirTam_Click);
             // 
             // label1
             // 
@@ -80,12 +88,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "CALCULADORA DE MATRICES";
             // 
-            // txtFilas
+            // txtFilasA
             // 
-            this.txtFilas.Location = new System.Drawing.Point(46, 139);
-            this.txtFilas.Name = "txtFilas";
-            this.txtFilas.Size = new System.Drawing.Size(100, 20);
-            this.txtFilas.TabIndex = 2;
+            this.txtFilasA.Location = new System.Drawing.Point(46, 139);
+            this.txtFilasA.Name = "txtFilasA";
+            this.txtFilasA.Size = new System.Drawing.Size(100, 20);
+            this.txtFilasA.TabIndex = 2;
             // 
             // label2
             // 
@@ -98,12 +106,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "TAMAÑO:";
             // 
-            // txtColum
+            // txtColumA
             // 
-            this.txtColum.Location = new System.Drawing.Point(46, 184);
-            this.txtColum.Name = "txtColum";
-            this.txtColum.Size = new System.Drawing.Size(100, 20);
-            this.txtColum.TabIndex = 4;
+            this.txtColumA.Location = new System.Drawing.Point(46, 184);
+            this.txtColumA.Name = "txtColumA";
+            this.txtColumA.Size = new System.Drawing.Size(100, 20);
+            this.txtColumA.TabIndex = 4;
             // 
             // label3
             // 
@@ -169,6 +177,27 @@
             this.gb.TabIndex = 10;
             this.gb.TabStop = false;
             // 
+            // dgvMA
+            // 
+            this.dgvMA.AllowUserToAddRows = false;
+            this.dgvMA.AllowUserToDeleteRows = false;
+            this.dgvMA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMA.ColumnHeadersVisible = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMA.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMA.Location = new System.Drawing.Point(0, 13);
+            this.dgvMA.Name = "dgvMA";
+            this.dgvMA.RowHeadersVisible = false;
+            this.dgvMA.Size = new System.Drawing.Size(220, 131);
+            this.dgvMA.TabIndex = 0;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvMB);
@@ -177,6 +206,27 @@
             this.groupBox1.Size = new System.Drawing.Size(220, 150);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
+            // 
+            // dgvMB
+            // 
+            this.dgvMB.AllowUserToAddRows = false;
+            this.dgvMB.AllowUserToDeleteRows = false;
+            this.dgvMB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMB.ColumnHeadersVisible = false;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMB.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMB.Location = new System.Drawing.Point(0, 13);
+            this.dgvMB.Name = "dgvMB";
+            this.dgvMB.RowHeadersVisible = false;
+            this.dgvMB.Size = new System.Drawing.Size(220, 131);
+            this.dgvMB.TabIndex = 12;
             // 
             // groupBox2
             // 
@@ -187,27 +237,24 @@
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             // 
-            // dgvMA
-            // 
-            this.dgvMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMA.Location = new System.Drawing.Point(0, 13);
-            this.dgvMA.Name = "dgvMA";
-            this.dgvMA.Size = new System.Drawing.Size(220, 131);
-            this.dgvMA.TabIndex = 0;
-            // 
-            // dgvMB
-            // 
-            this.dgvMB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMB.Location = new System.Drawing.Point(0, 13);
-            this.dgvMB.Name = "dgvMB";
-            this.dgvMB.Size = new System.Drawing.Size(220, 131);
-            this.dgvMB.TabIndex = 12;
-            // 
             // dgvMR
             // 
+            this.dgvMR.AllowUserToAddRows = false;
+            this.dgvMR.AllowUserToDeleteRows = false;
+            this.dgvMR.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMR.ColumnHeadersVisible = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMR.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMR.Location = new System.Drawing.Point(0, 13);
             this.dgvMR.Name = "dgvMR";
+            this.dgvMR.RowHeadersVisible = false;
             this.dgvMR.Size = new System.Drawing.Size(220, 131);
             this.dgvMR.TabIndex = 12;
             // 
@@ -290,12 +337,52 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "OPERACIONES:";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(367, 169);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(144, 16);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Cantidad de Columnas";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(367, 127);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(113, 16);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Cantidad de Filas";
+            // 
+            // txtColumB
+            // 
+            this.txtColumB.Location = new System.Drawing.Point(367, 188);
+            this.txtColumB.Name = "txtColumB";
+            this.txtColumB.Size = new System.Drawing.Size(100, 20);
+            this.txtColumB.TabIndex = 21;
+            // 
+            // txtFilasB
+            // 
+            this.txtFilasB.Location = new System.Drawing.Point(367, 143);
+            this.txtFilasB.Name = "txtFilasB";
+            this.txtFilasB.Size = new System.Drawing.Size(100, 20);
+            this.txtFilasB.TabIndex = 20;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(939, 471);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtColumB);
+            this.Controls.Add(this.txtFilasB);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblOper);
@@ -312,19 +399,19 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtColum);
+            this.Controls.Add(this.txtColumA);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtFilas);
+            this.Controls.Add(this.txtFilasA);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnConfirTam);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.gb.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMA)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMB)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -335,9 +422,9 @@
 
         private System.Windows.Forms.Button btnConfirTam;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtFilas;
+        private System.Windows.Forms.TextBox txtFilasA;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtColum;
+        private System.Windows.Forms.TextBox txtColumA;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -357,6 +444,10 @@
         private System.Windows.Forms.Label lblOper;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtColumB;
+        private System.Windows.Forms.TextBox txtFilasB;
     }
 }
 
