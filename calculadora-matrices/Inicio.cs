@@ -75,9 +75,10 @@ namespace calculadora_matrices
                     dgvMR.RowCount = dgvMA.Rows.Count;
 
                     int i, j;
-                    int filaA, columnaB;
+                    int filaA, columnaA, columnaB;
 
                     filaA = Convert.ToInt32(txtFilasA.Text);
+                    columnaA = Convert.ToInt32(txtColumA.Text);
                     columnaB = Convert.ToInt32(txtColumB.Text);
 
                     for (i = 0; i < filaA; i++)//recorre fila matriz resultado
@@ -85,11 +86,11 @@ namespace calculadora_matrices
                         for (j = 0; j < columnaB; j++)//recorre columna de matriz resultado
                         {
                             dgvMR.Rows[i].Cells[j].Value = 0;
-                            for (int p = 0; p < columnaB - 1; p++)
+                            for (int k = 0; k < columnaA; k++)
                             {
                                 dgvMR.Rows[i].Cells[j].Value = Convert.ToDouble(dgvMR.Rows[i].Cells[j].Value)
-                                    + Convert.ToDouble(dgvMA.Rows[i].Cells[p].Value)
-                                    * Convert.ToDouble(dgvMB.Rows[p].Cells[j].Value);
+                                    + Convert.ToDouble(dgvMA.Rows[i].Cells[k].Value)
+                                    * Convert.ToDouble(dgvMB.Rows[k].Cells[j].Value);
                             }
                         }
                     }
