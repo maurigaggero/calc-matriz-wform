@@ -154,7 +154,14 @@ namespace calculadora_matrices
 
         private void btnConfirTam_Click(object sender, EventArgs e)
         {
-            CtorMatriz();
+            try
+            {
+                CtorMatriz();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Defina un tamaño para ambas matrices");
+            }            
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
