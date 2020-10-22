@@ -156,5 +156,13 @@ namespace calculadora_matrices
         {
             CtorMatriz();
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtEscal.Clear();
+            dgvMA.Columns.Clear();
+            dgvMB.Columns.Clear();
+            dgvMR.Columns.Clear();
+        }
     }
 }

@@ -59,6 +59,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtColumB = new System.Windows.Forms.TextBox();
             this.txtFilasB = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.gb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMA)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -69,10 +71,10 @@
             // 
             // btnConfirTam
             // 
-            this.btnConfirTam.Location = new System.Drawing.Point(212, 139);
+            this.btnConfirTam.Location = new System.Drawing.Point(364, 134);
             this.btnConfirTam.Name = "btnConfirTam";
             this.btnConfirTam.Size = new System.Drawing.Size(75, 48);
-            this.btnConfirTam.TabIndex = 0;
+            this.btnConfirTam.TabIndex = 5;
             this.btnConfirTam.Text = "Confirmar Tamaño";
             this.btnConfirTam.UseVisualStyleBackColor = true;
             this.btnConfirTam.Click += new System.EventHandler(this.btnConfirTam_Click);
@@ -93,7 +95,7 @@
             this.txtFilasA.Location = new System.Drawing.Point(46, 139);
             this.txtFilasA.Name = "txtFilasA";
             this.txtFilasA.Size = new System.Drawing.Size(100, 20);
-            this.txtFilasA.TabIndex = 2;
+            this.txtFilasA.TabIndex = 1;
             // 
             // label2
             // 
@@ -111,7 +113,7 @@
             this.txtColumA.Location = new System.Drawing.Point(46, 184);
             this.txtColumA.Name = "txtColumA";
             this.txtColumA.Size = new System.Drawing.Size(100, 20);
-            this.txtColumA.TabIndex = 4;
+            this.txtColumA.TabIndex = 2;
             // 
             // label3
             // 
@@ -120,9 +122,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(46, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 16);
+            this.label3.Size = new System.Drawing.Size(87, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Cantidad de Filas";
+            this.label3.Text = "Filas Matriz A";
             // 
             // label4
             // 
@@ -131,9 +133,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(46, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 16);
+            this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Cantidad de Columnas";
+            this.label4.Text = "Columnas Matriz A";
             // 
             // label5
             // 
@@ -196,7 +198,7 @@
             this.dgvMA.Name = "dgvMA";
             this.dgvMA.RowHeadersVisible = false;
             this.dgvMA.Size = new System.Drawing.Size(220, 131);
-            this.dgvMA.TabIndex = 0;
+            this.dgvMA.TabIndex = 6;
             // 
             // groupBox1
             // 
@@ -226,7 +228,7 @@
             this.dgvMB.Name = "dgvMB";
             this.dgvMB.RowHeadersVisible = false;
             this.dgvMB.Size = new System.Drawing.Size(220, 131);
-            this.dgvMB.TabIndex = 12;
+            this.dgvMB.TabIndex = 7;
             // 
             // groupBox2
             // 
@@ -254,6 +256,7 @@
             this.dgvMR.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMR.Location = new System.Drawing.Point(0, 13);
             this.dgvMR.Name = "dgvMR";
+            this.dgvMR.ReadOnly = true;
             this.dgvMR.RowHeadersVisible = false;
             this.dgvMR.Size = new System.Drawing.Size(220, 131);
             this.dgvMR.TabIndex = 12;
@@ -263,7 +266,7 @@
             this.btnSum.Location = new System.Drawing.Point(689, 120);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(75, 23);
-            this.btnSum.TabIndex = 12;
+            this.btnSum.TabIndex = 8;
             this.btnSum.Text = "Suma";
             this.btnSum.UseVisualStyleBackColor = true;
             this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
@@ -273,37 +276,37 @@
             this.btnRes.Location = new System.Drawing.Point(785, 120);
             this.btnRes.Name = "btnRes";
             this.btnRes.Size = new System.Drawing.Size(75, 23);
-            this.btnRes.TabIndex = 13;
+            this.btnRes.TabIndex = 9;
             this.btnRes.Text = "Resta";
             this.btnRes.UseVisualStyleBackColor = true;
             this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
             // 
             // btnEscal
             // 
-            this.btnEscal.Location = new System.Drawing.Point(785, 159);
+            this.btnEscal.Location = new System.Drawing.Point(785, 149);
             this.btnEscal.Name = "btnEscal";
             this.btnEscal.Size = new System.Drawing.Size(75, 23);
-            this.btnEscal.TabIndex = 14;
+            this.btnEscal.TabIndex = 11;
             this.btnEscal.Text = "Escalar:";
             this.btnEscal.UseVisualStyleBackColor = true;
             this.btnEscal.Click += new System.EventHandler(this.btnEscal_Click);
             // 
             // btnMulti
             // 
-            this.btnMulti.Location = new System.Drawing.Point(689, 159);
+            this.btnMulti.Location = new System.Drawing.Point(689, 149);
             this.btnMulti.Name = "btnMulti";
             this.btnMulti.Size = new System.Drawing.Size(75, 23);
-            this.btnMulti.TabIndex = 15;
+            this.btnMulti.TabIndex = 10;
             this.btnMulti.Text = "Multiplicar";
             this.btnMulti.UseVisualStyleBackColor = true;
             this.btnMulti.Click += new System.EventHandler(this.btnMulti_Click);
             // 
             // txtEscal
             // 
-            this.txtEscal.Location = new System.Drawing.Point(785, 189);
+            this.txtEscal.Location = new System.Drawing.Point(785, 179);
             this.txtEscal.Name = "txtEscal";
             this.txtEscal.Size = new System.Drawing.Size(75, 20);
-            this.txtEscal.TabIndex = 16;
+            this.txtEscal.TabIndex = 12;
             // 
             // lblOper
             // 
@@ -320,7 +323,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(627, 337);
+            this.label8.Location = new System.Drawing.Point(623, 337);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(25, 25);
             this.label8.TabIndex = 18;
@@ -342,36 +345,56 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(367, 169);
+            this.label10.Location = new System.Drawing.Point(212, 165);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 16);
+            this.label10.Size = new System.Drawing.Size(118, 16);
             this.label10.TabIndex = 23;
-            this.label10.Text = "Cantidad de Columnas";
+            this.label10.Text = "Columnas Matriz B";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(367, 127);
+            this.label11.Location = new System.Drawing.Point(212, 123);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 16);
+            this.label11.Size = new System.Drawing.Size(87, 16);
             this.label11.TabIndex = 22;
-            this.label11.Text = "Cantidad de Filas";
+            this.label11.Text = "Filas Matriz B";
             // 
             // txtColumB
             // 
-            this.txtColumB.Location = new System.Drawing.Point(367, 188);
+            this.txtColumB.Location = new System.Drawing.Point(212, 184);
             this.txtColumB.Name = "txtColumB";
             this.txtColumB.Size = new System.Drawing.Size(100, 20);
-            this.txtColumB.TabIndex = 21;
+            this.txtColumB.TabIndex = 4;
             // 
             // txtFilasB
             // 
-            this.txtFilasB.Location = new System.Drawing.Point(367, 143);
+            this.txtFilasB.Location = new System.Drawing.Point(212, 139);
             this.txtFilasB.Name = "txtFilasB";
             this.txtFilasB.Size = new System.Drawing.Size(100, 20);
-            this.txtFilasB.TabIndex = 20;
+            this.txtFilasB.TabIndex = 3;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(689, 179);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 13;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(806, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(133, 39);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Realizada por los alumnos:\r\nGaggero, Mauricio\r\nMalvissi, Tomás";
             // 
             // Inicio
             // 
@@ -379,6 +402,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(939, 471);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtColumB);
@@ -448,6 +473,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtColumB;
         private System.Windows.Forms.TextBox txtFilasB;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label label12;
     }
 }
 
