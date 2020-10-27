@@ -167,6 +167,10 @@ namespace calculadora_matrices
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            txtFilasA.Clear();
+            txtFilasB.Clear();
+            txtColumA.Clear();
+            txtColumB.Clear();
             txtEscal.Clear();
             dgvMA.Columns.Clear();
             dgvMB.Columns.Clear();
